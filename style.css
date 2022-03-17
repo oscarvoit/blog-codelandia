@@ -6,19 +6,24 @@
   font-family: 'Inter-Regular';
   src: url('fonts/Inter-Regular.ttf') format('truetype');
 }
+
 @font-face {
   font-family: 'LexendDeca-Regular';
   src: url('fonts/LexendDeca-Regular.ttf') format('truetype');
-  font-weight: 100;
-}
+} 
 
 :root {
   --blue: #3EA1DB;
   --blue-dark: #574AE8;
   --white: #FFF;
   --title: #313131;
-  --text: #B6B6B6;
+  --text: #717171;
   --linear: linear-gradient(90deg, #574AE8 0%, #3EA1DB 100%);
+  --background: #0c0c0c09;
+}
+
+body {
+  font-family: 'Lexend Deca', sans-serif;
 }
 
 * {
@@ -33,14 +38,14 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 4% 20%;
+  padding: 4% 15%;
 }
 
 header .navbar {
   display: flex;
   justify-content: space-between;
   color: var(--white);
-  font-family: 'LexendDeca-Regular';
+  font-family: 'Lexend Deca', sans-serif;
   font-size: 1em;
   width: 100%;
 }
@@ -76,4 +81,36 @@ header .search input::placeholder {
   color: var(--white);
   font-family: 'Inter-Regular';
   font-size: 15px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--background);
+  padding: 4% 15%;
+}
+
+.container .article {
+  background-color: var(--white);
+  margin-top: 40px;
+  padding: 15px;
+  border-radius: 7px;
+}
+
+.container .article span {
+  color: var(--text);
+  font-size: 16px;
+}
+
+.container .article h1 {
+  color: var(--title);
+  margin: 15px 0;
+}
+
+.container .article p {
+  color: var(--text);
+  line-height: 32px;
+  font-weight: 400;
+  font-size: 18px;
 }
