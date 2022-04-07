@@ -26,6 +26,6 @@ O objetivo do desafio é recriar um blog a partir do projeto disponibilizado em 
 
 ## Autor
 
-| [<img src="https://avatars.githubusercontent.com/u/85187840?v=4" width="40px"><br><sub>@oscarvoit</sub>](https://github.com/oscarvoit) |
+| [<img src="https://avatars.githubusercontent.com/u/85187840?v=4" width="100px"><br><sub>@oscarvoit</sub>](https://github.com/oscarvoit) |
 | :---: |
 
