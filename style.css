@@ -18,6 +18,7 @@
   --white: #FFF;
   --title: #313131;
   --text: #717171;
+  --scroolbar: #f1f1f1;
   --linear: linear-gradient(90deg, #574AE8 0%, #3EA1DB 100%);
   --background: #0c0c0c09;
 }
@@ -38,7 +39,7 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 4% 15%;
+  padding: 4% 23%;
 }
 
 header .navbar {
@@ -61,9 +62,9 @@ header .search {
   margin-top: 30px;
 }
 
-header .search img {
-  width: 1.5rem;
-  height: 1.5rem;
+header .search i {
+  font-size: 1.5rem;
+  color: var(--white);
 }
 
 header .search input {
@@ -88,7 +89,7 @@ header .search input::placeholder {
   flex-direction: column;
   justify-content: space-between;
   background-color: var(--background);
-  padding: 4% 15%;
+  padding: 4% 23%;
 }
 
 .container .article {
@@ -98,19 +99,125 @@ header .search input::placeholder {
   border-radius: 7px;
 }
 
+.container .article div {
+  display: flex;
+  justify-content: space-between;
+}
+
 .container .article span {
   color: var(--text);
   font-size: 16px;
 }
 
-.container .article h1 {
+.container .article i {
+  height: 30px;
+  color: var(--blue-dark);
+  font-size: 25px;
+}
+
+.container .article .title {
   color: var(--title);
   margin: 15px 0;
 }
 
-.container .article p {
+.container .article .description {
   color: var(--text);
   line-height: 32px;
   font-weight: 400;
   font-size: 18px;
+}
+
+
+/* ++++++++++ Scrollbar +++++++++++++++++++ */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--scrollbar);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--blue);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--blue-dark);
+}
+
+
+/* +++++++ Laptops +++++++++ */
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  header {
+    padding: 4% 15%;
+  }
+
+  .container {
+    padding: 4% 15%;    
+  }
+}
+
+/* +++++++ Tablets +++++++++ */
+
+@media  (min-width: 768px) and (max-width: 1024px) {
+  header {
+    padding: 6% 10%;
+  }
+  
+  .container {
+    padding: 4% 10%;    
+  }
+
+  .container .article {
+    margin-top: 30px;
+  }
+}
+
+/* +++++++ Tablets e Celulares +++++++++ */
+
+@media (min-width: 482px) and (max-width: 767px) {
+  header {
+    padding: 7% 8%;
+  }
+
+  .container {
+    padding: 4% 8%;    
+  }
+
+  .container .article {
+    margin-top: 25px;
+  }
+
+  .container .article p {
+    color: var(--text);
+    line-height: 25px;
+    font-weight: 200;
+    font-size: 16px;
+  }
+}
+
+/* +++++++ Celulares +++++++++ */
+
+
+@media (min-width:320px) and (max-width: 480px) {
+  header {
+    padding: 10% 5%;
+  }
+
+  .container {
+    padding: 4% 5%;    
+  }
+
+  .container .article {
+    margin-top: 20px;
+  }
+
+  .container .article p {
+    color: var(--text);
+    line-height: 25px;
+    font-weight: 200;
+    font-size: 16px;
+  }
 }

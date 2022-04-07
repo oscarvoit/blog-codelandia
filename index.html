@@ -5,60 +5,64 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/a05ab6f944.js" crossorigin="anonymous"></script>
   <title>Codelândia - Blog</title>
 </head>
 <body>
-
   <header>
     <div class="navbar">
       <h2>Codelândia</h2>
       <h2>blog</h2>
     </div>
     <div class="search">
-      <img src="img/search.png">
+      <i class="fa-solid fa-magnifying-glass"></i>
       <input type="text" placeholder="Pesquisar no blog">
     </div>
   </header>
-
+  
   <div class="container">
     <article class="article">
       <div>
-        <span>17 de mar, 2022</span>
-        <img>
+        <span class="date">17 de mar, 2022</span>
+        <i class="fa-regular fa-heart like" onclick="handleLike(0)"></i>
       </div>
-      <h1>Agora é oficial: o Windows 11 está vindo</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, veniam harum rem voluptates quis beatae possimus. Dolorum enim explicabo assumenda accusamus dicta omnis velit provident veritatis</p>
+      <h1 class="title">Agora é oficial: o Windows 11 está vindo</h1>
+      <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, veniam harum rem voluptates quis beatae possimus. Dolorum enim explicabo assumenda accusamus dicta omnis velit provident veritatis</p>
     </article>
 
     <article class="article">
       <div>
-        <span>17 de mar, 2022</span>
-        <img>
+        <span class="date">17 de mar, 2022</span>
+        <i class="fa-regular fa-heart like" onclick="handleLike(1)"></i>
       </div>
-      <h1>Tim Berners-Lee vai leiloar código-fonte da web</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti adipisci quidem fugit. Distinctio, tempore quo vero deleniti quibusdam delectus cum exercitationem atque! Reiciendis quod eveniet, cumque est quam eius itaque. Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+      <h1 class="title">Tim Berners-Lee vai leiloar código-fonte da web</h1>
+      <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti adipisci quidem fugit. Distinctio, tempore quo vero deleniti quibusdam delectus cum exercitationem atque! Reiciendis quod eveniet, cumque est quam eius itaque. Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
     </article>
 
     <article class="article">
       <div>
-        <span>17 de mar, 2022</span>
-        <img>
+        <span class="date">17 de mar, 2022</span>
+        <i class="fa-regular fa-heart like" onclick="handleLike(2)"></i>
       </div>
-      <h1>Tem Firefox novo no pedaço e você vai querer migrar</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <h1 class="title">Tem Firefox novo no pedaço e você vai querer migrar</h1>
+      <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
     </article>
 
     <article class="article">
       <div>
-        <span>17 de mar, 2022</span>
-        <img>
+        <span class="date">17 de mar, 2022</span>
+        <i class="fa-regular fa-heart like" onclick="handleLike(3)"></i>
       </div>
-      <h1>John McAfee, criador do antivirus McAfee, morre</h1>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum nam animi illo non cum, temporibus commodi magni ut, dignissimos minus, nobis eligendi aut enim libero nihil beatae praesentium rem pariatur.
+      <h1 class="title">John McAfee, criador do antivirus McAfee, morre</h1>
+      <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum nam animi illo non cum, temporibus commodi magni ut, dignissimos minus, nobis eligendi aut enim libero nihil beatae praesentium rem pariatur.
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum enim explicabo assumenda accusamus dicta omnis velit provident veritatis, molestias temporibus ea a, quasi optio qui deleniti alias obcaecati facere nostrum?
       </p>
     </article>
 
   </div>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="main.js"></script>
+
 </body>
 </html>
