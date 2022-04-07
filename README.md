@@ -14,7 +14,7 @@ O objetivo do desafio é recriar um blog a partir do projeto disponibilizado em 
 - HTML
 - CSS
 - JavaScript
-- Fontawesome
+- Font Awesome
 
 ## Screenshots
 
